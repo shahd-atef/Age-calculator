@@ -1,0 +1,184 @@
+*
+{
+    padding:0;
+    margin:0;
+
+}
+body{
+    background-color: hsl(0, 0%, 94%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family:'Poppins', sans-serif;
+}
+  .container
+{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    position: relative;
+    box-sizing: border-box;
+  
+   width:500px;
+   max-width: 80%;
+   min-height: 400px;
+   height: auto;
+   padding:30px;
+   border-radius: 25px 25px 160px 20px;
+   background-color:hsl(0, 0%, 100%) ;
+   -webkit-border-radius: 25px 25px 160px 20px;
+   -moz-border-radius: 25px 25px 160px 20px;
+   -ms-border-radius: 25px 25px 160px 20px;
+   -o-border-radius: 25px 25px 160px 20px;
+}
+
+.user-inputs
+{
+    display:flex;
+    flex-direction: row;
+   gap:15px;
+}
+label
+{
+    color: hsl(0, 1%, 44%);
+    letter-spacing: 1px;
+    font-size: 10px;
+    font-weight: 400;
+}
+.input-group
+{
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+  
+}
+
+input{
+    box-sizing: border-box;
+    width:90px;
+    padding:12px;
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1.5px solid  hsl(0, 0%, 94%);
+    outline: none;
+}
+input:hover{
+    border-color: hsl(259, 100%, 65%) ;
+}
+div .click-submit
+{
+    margin-bottom:40px;
+}
+
+.submit
+{
+    width:60px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    right:20px;
+    top:110px;
+    border:none;
+    color:hsl(0, 0%, 100%);
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.submit:hover{
+    background-color: black;
+}
+.error-day , .error-month,.error-year
+{
+    font-size: 12px;
+    color: hsl(0, 100%, 67%);
+    font-style: italic;
+
+}
+.age-output span
+{
+    font-size: 30p;
+    font-style: italic;
+    color:hsl(259, 100%, 65%);
+
+}
+.age-output p{
+    font-size: 35px;
+    font-style: italic;
+    font-weight: 800;
+    font-family: "Poppins";
+    color:hsl(0, 0%, 8%);
+}
+.click-submit span{
+    position:absolute;
+    left:20px;
+    top:140px;
+    width:80%;
+ border:1px solid hsl(0, 0%, 86%);
+ 
+}
+
+
+@media(max-width:420px)
+{
+    .container
+    {
+        padding: 15px;
+    width: 90%;
+    min-height: 500px;
+   
+   
+}
+.user-inputs
+{
+    gap:10px;
+}
+input {
+   
+    width: 70px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+}
+
+.submit {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 50%;
+    top: 110px;
+   
+}
+.age-output
+{
+    margin-top:20px;
+}
+}
+@media (max-width:309px)
+{
+    input {
+        width: 55px;
+        padding: 5px;
+        font-size: 13px;
+        font-weight: 700;
+        color: black;
+    }
+    .age-output p
+    {
+        font-size: 25px;
+    }
+}
